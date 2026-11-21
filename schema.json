@@ -1,0 +1,7563 @@
+{
+  "ShipInfoToAduited": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "72f1f7b5-71ef-4648-8c6b-04c9889c8155"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "4ac76f9d-f9f2-4db8-947f-50e71fda2144"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "27522c45-84f1-4ece-adc2-c9e593b47dd6"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "温小暖"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省广州市白云区京溪路香柏广场G栋G2103"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "24年*48次"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "12.35"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "11.73"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "95"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2027-01-25 00:00:00"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Monday"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "FenE"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "1396-1909"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "ZCZF-MGFE-1F-T-L018"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": "土豆，茴香，球茎茴香,水芹菜，甜菜根"
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "BoxType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "16474"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodLabels": {
+        "type": "unknown",
+        "sample": null
+      },
+      "express_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "广州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "白云区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "京溪路香柏广场G栋G2103"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "10"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20250525160218068200065"
+      },
+      "SyncJstStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LocalJstCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "JstExpressCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AutoID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4330"
+      },
+      "Creator": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:52"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4330"
+      },
+      "Modifier": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:52"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "17903"
+      },
+      "item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "unknown",
+        "sample": null
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 78995,
+    "error": null
+  },
+  "ShipInfoOnShip": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "e22cb6ff-9133-429d-a707-a6f542f90968"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "59509240-313f-42c2-9222-19bba9162565"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "724a37ef-17b8-4a39-8ec9-457cddf31ead"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "生态卤水豆腐"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "杨雪婷"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "19518890099"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江苏省盐城市盐都区潘黄街道 青年路西城逸品28栋2单元403"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "500g（2-4人量）"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "10.45"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "10.45"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Sunday"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "6"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "ZCZF-LSDF-500G2CM-Y-L013#1"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "ZCZF-LSDF-500G2CM-Y-L013"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "UnBox"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "生态卤水豆腐"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "21698"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "生态卤水豆腐"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodLabels": {
+        "type": "string",
+        "sample": "必选1：绿家自产,必选2：温区-冷藏,必选3：非采配库存维护,冷冻冷鲜"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江苏省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "盐城市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "盐都区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "潘黄街道 青年路西城逸品28栋2单元403"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261114110349043602059"
+      },
+      "SyncJstStatus": {
+        "type": "string",
+        "sample": "Uploaded"
+      },
+      "LocalJstCode": {
+        "type": "string",
+        "sample": "HT20261115095320021698236"
+      },
+      "JstExpressCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "numeric(string)",
+        "sample": "11.00"
+      },
+      "discount_price": {
+        "type": "numeric(string)",
+        "sample": "10.45"
+      },
+      "AutoID": {
+        "type": "int",
+        "sample": "4630"
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:38:32"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:57:36"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "13596"
+      },
+      "item_id": {
+        "type": "numeric(string)",
+        "sample": "5108291803"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "瓜娃子"
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 824,
+    "error": null
+  },
+  "memberinfo": {
+    "fields": {
+      "MemID": {
+        "type": "int",
+        "sample": "35978"
+      },
+      "RealName": {
+        "type": "string",
+        "sample": "崔晓洁"
+      },
+      "NickName": {
+        "type": "string",
+        "sample": "崔晓洁"
+      },
+      "Gender": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Mobile": {
+        "type": "numeric(string)",
+        "sample": "13763233273"
+      },
+      "AnotherPhone": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Account": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "IsWantBoxRecycle": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxRecycleCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxRecycleDefaultGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "IsWantSubShip": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubShipDefaultGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CollectFreight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Yz_Open_ID": {
+        "type": "string",
+        "sample": "VTxvT36p800755357818327040"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Province": {
+        "type": "unknown",
+        "sample": null
+      },
+      "City": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Country": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateWay": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Birthday": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Platform_Type": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:48:08"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:48:08"
+      },
+      "Avatar": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4rjhtJB0zIqIGqKrS9uacmE"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fans_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fans_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldMemID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemRemark": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 25907,
+    "error": null
+  },
+  "ShipInfoAduited": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "0a57890f-c5e9-4500-97e1-ef34bcfb3d32"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "3b270e41-49e5-4a22-b3ee-3bec8112b012"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "d03924fa-bdea-46d6-a258-94a06b0674c7"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "禾然有机酱油"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "郭丽梅"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18705357251"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "N0000"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "浙江省衢州市柯城区九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "500ml"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "2"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "0.01"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "0.02"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Monday"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "2"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "fetch"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "HZZF-HRJY-HRJY/500ml-B-S118"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "HZZF-HRJY-HRJY/500ml-B-S118"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "Box"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "ZITI"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "禾然有机酱油"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "14763"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "禾然有机酱油 | 公平贸易*Hona Organic soy sauce | Fair trade"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "string",
+        "sample": "货物已提走了，不用再出库"
+      },
+      "GoodLabels": {
+        "type": "string",
+        "sample": "必选1：公平贸易,必选2：温区-常温,必选3：采配库存维护,液体粉末,急需补货商品"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "浙江省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "衢州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "柯城区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "衢州农场"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "2"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115095039038206149"
+      },
+      "SyncJstStatus": {
+        "type": "string",
+        "sample": "Sent"
+      },
+      "LocalJstCode": {
+        "type": "string",
+        "sample": "HT20261115100908014763372"
+      },
+      "JstExpressCode": {
+        "type": "numeric(string)",
+        "sample": "117343240004118484"
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "numeric(string)",
+        "sample": "36.80"
+      },
+      "discount_price": {
+        "type": "numeric(string)",
+        "sample": "36.80"
+      },
+      "AutoID": {
+        "type": "int",
+        "sample": "20657"
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:08:25"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:15:04"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "15278"
+      },
+      "item_id": {
+        "type": "numeric(string)",
+        "sample": "5108289484"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "梧桐子"
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 489403,
+    "error": null
+  },
+  "account": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "150670"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "14763"
+      },
+      "Action": {
+        "type": "string",
+        "sample": "KouFei"
+      },
+      "OldBalance": {
+        "type": "decimal",
+        "sample": "-4723.95"
+      },
+      "Balance": {
+        "type": "decimal",
+        "sample": "-4723.95"
+      },
+      "Change": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "Reason": {
+        "type": "string",
+        "sample": "审批订单【3b270e41-49e5-4a22-b3ee-3bec8112b012】成功.,扣除运费金额:0.00"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "3b270e41-49e5-4a22-b3ee-3bec8112b012"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:08:26"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:08:26"
+      }
+    },
+    "total": 140671,
+    "error": null
+  },
+  "ShipInfoPaused": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "b4df71a4-684e-4814-a8f9-43b3fce66b0f"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "69647d6f-7aab-43a3-8eb3-16644e71109c"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "71fc4932-c0b1-4af2-b66a-382aadd6d0a5"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "鸡蛋份额"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "刘女士"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15815800717"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省珠海市香洲区湾仔花地路8号澳景湾2栋705"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "鸡蛋份额42"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "42.0"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "42.0"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "6.0"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-10 00:00:00"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Tuesday"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "4"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "FenE"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "1211-1893"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "ZCZF-JDFE-1J-N-L002"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": "春笋，空心菜，茄子，沙葛"
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "BoxType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "鸡蛋份额"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "16377"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "鸡蛋份额"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodLabels": {
+        "type": "unknown",
+        "sample": null
+      },
+      "express_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "珠海市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "香洲区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "湾仔花地路8号澳景湾2栋705"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Freeze"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "6"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "6"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261008082656005600037"
+      },
+      "SyncJstStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LocalJstCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "JstExpressCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AutoID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4328"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "手机用户0717"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 08:59:36"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4328"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "手机用户0717"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 08:59:36"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "17891"
+      },
+      "item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "风信子"
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 101302,
+    "error": null
+  },
+  "addressinfo": {
+    "fields": {
+      "AddressID": {
+        "type": "int",
+        "sample": "74955"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "35978"
+      },
+      "AddressName": {
+        "type": "string",
+        "sample": "崔晓洁地址1"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "崔晓洁"
+      },
+      "AgeingText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省东莞市东城街道东城街道新源南路东骏路东城段1号光大·景湖花园-57座 紫荆57"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "13763233273"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AddressType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "东城街道"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "东莞市"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "东城街道新源南路东骏路东城段1号光大·景湖花园-57座 紫荆57"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Both"
+      },
+      "Weekly": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:48:08"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:48:08"
+      },
+      "Lat": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Lon": {
+        "type": "unknown",
+        "sample": null
+      },
+      "StoreID": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 49864,
+    "error": null
+  },
+  "ShipInfo": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "72f1f7b5-71ef-4648-8c6b-04c9889c8155"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "4ac76f9d-f9f2-4db8-947f-50e71fda2144"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "27522c45-84f1-4ece-adc2-c9e593b47dd6"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "温小暖"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省广州市白云区京溪路香柏广场G栋G2103"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "24年*48次"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "12.35"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "11.73"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "95"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2027-01-25 00:00:00"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Monday"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "FenE"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "1396-1909"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "ZCZF-MGFE-1F-T-L018"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": "土豆，茴香，球茎茴香,水芹菜，甜菜根"
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "BoxType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "16474"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "单人蘑菇份额"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodLabels": {
+        "type": "unknown",
+        "sample": null
+      },
+      "express_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "广州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "白云区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "京溪路香柏广场G栋G2103"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "10"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20250525160218068200065"
+      },
+      "SyncJstStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LocalJstCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "JstExpressCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AutoID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4330"
+      },
+      "Creator": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:52"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4330"
+      },
+      "Modifier": {
+        "type": "numeric(string)",
+        "sample": "15302287811"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:52"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "17903"
+      },
+      "item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "unknown",
+        "sample": null
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 671238,
+    "error": null
+  },
+  "UnlikeInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "39522"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "32072"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "74944"
+      },
+      "FeneType": {
+        "type": "string",
+        "sample": "shucai"
+      },
+      "UnlikeList": {
+        "type": "numeric(string)",
+        "sample": "197"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "shenxiaolong"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:04:22"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LikeList": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 7347,
+    "error": null
+  },
+  "BagDetail": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "306818"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "14624"
+      },
+      "JstOrderCode": {
+        "type": "string",
+        "sample": "JST202611150947406465014624013704794"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "朝阳"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "刘文芳"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "13702334243"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "X1552"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省珠海市香洲区香湾街道朝阳路朝阳市场正对面，美宜佳便利店——【朝阳】"
+      },
+      "FenEText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "FreezeText": {
+        "type": "string",
+        "sample": "\r\n【生态猪肉（猪板油500g）× 2】\r\n【生态腌仔姜（200g/袋）× 1】\r\n【生态豆腐泡（250g/盒）× 1】"
+      },
+      "MeatText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "NormalText": {
+        "type": "string",
+        "sample": "【生态猪肉松（原味，70g/罐）× 1】\r\n【生态卤水豆腐（500g（2-4人量））× 1】\r\n【生态冻豆腐（500g/"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "LikeProduct": {
+        "type": "string",
+        "sample": ""
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": ""
+      },
+      "OtherDemand": {
+        "type": "string",
+        "sample": ""
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "ZITI"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "珠海市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "香洲区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "香湾街道朝阳路朝阳市场正对面，美宜佳便利店——【朝阳】"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "BagID": {
+        "type": "int",
+        "sample": "13704"
+      },
+      "OrderIDList": {
+        "type": "string",
+        "sample": "e2ed0a22-5125-4ace-93e8-53710a811be9,e2ed0a22-5125-4ace-93e8"
+      },
+      "DetailIDList": {
+        "type": "string",
+        "sample": "fd4bd9a8-7d66-4ca4-9fe0-8bfaa132bae0,8f38e866-7d8c-4dc8-b861"
+      },
+      "ShipIDList": {
+        "type": "string",
+        "sample": "136c169a-4120-4cf2-badc-da50a02f80a9,14730c85-9d34-404d-b174"
+      },
+      "RemainTimeList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainCountList": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 296640,
+    "error": null
+  },
+  "ViewUnlikeList": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "39522"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "32072"
+      },
+      "RealName": {
+        "type": "string",
+        "sample": "唐文师"
+      },
+      "Mobile": {
+        "type": "numeric(string)",
+        "sample": "15016986568"
+      },
+      "FeneType": {
+        "type": "string",
+        "sample": "shucai"
+      },
+      "UnlikeList": {
+        "type": "numeric(string)",
+        "sample": "197"
+      },
+      "LikeList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Weight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "74944"
+      },
+      "AddressName": {
+        "type": "string",
+        "sample": "唐文的地址4"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "唐文师"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15016986568"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "深圳市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "南山区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "佳兆业一期山海美域1A栋1303"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省深圳市南山区佳兆业一期山海美域1A栋1303"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "shenxiaolong"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:04:22"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 7347,
+    "error": null
+  },
+  "BagInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "13704"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "2026-11-15至2026-11-15配送/拣菜单"
+      },
+      "SearchString": {
+        "type": "string",
+        "sample": "【发货基地:珠海基地】【运输公司:自提】【状态:待配送】"
+      },
+      "StartDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "EndDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:47:41"
+      }
+    },
+    "total": 3705,
+    "error": null
+  },
+  "AccountForBox": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "1355"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "22284"
+      },
+      "RealName": {
+        "type": "string",
+        "sample": "许小叶"
+      },
+      "Mobile": {
+        "type": "numeric(string)",
+        "sample": "13421879603"
+      },
+      "Action": {
+        "type": "string",
+        "sample": "RechargeBox"
+      },
+      "Change": {
+        "type": "int",
+        "sample": "15"
+      },
+      "Balance": {
+        "type": "int",
+        "sample": "15"
+      },
+      "OldBalance": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Reason": {
+        "type": "string",
+        "sample": "寄回农场15个纸箱，德邦DPK202848650001"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3390"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "覆盆子"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:43:12"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 1348,
+    "error": null
+  },
+  "AccountForJianpei": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "2432"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "35119"
+      },
+      "RealName": {
+        "type": "string",
+        "sample": "侯清富"
+      },
+      "Mobile": {
+        "type": "numeric(string)",
+        "sample": "13911391902"
+      },
+      "Action": {
+        "type": "string",
+        "sample": "RechargeSubShip"
+      },
+      "Change": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Balance": {
+        "type": "int",
+        "sample": "1"
+      },
+      "OldBalance": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Reason": {
+        "type": "string",
+        "sample": "9.10-9.15 4A4B6A6B9A9B各减了一斤"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-18 16:22:08"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 2429,
+    "error": null
+  },
+  "JianCaiInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "13114"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "2026-11-13至2026-11-13配送/拣菜单"
+      },
+      "SearchString": {
+        "type": "string",
+        "sample": "【发货基地:珠海基地】【状态:待配送】"
+      },
+      "StartDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-13 00:00:00"
+      },
+      "EndDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-13 00:00:00"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3365"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "绿手指"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-13 09:59:14"
+      }
+    },
+    "total": 3115,
+    "error": null
+  },
+  "FreightRecord": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "5"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "11585"
+      },
+      "ShipID": {
+        "type": "guid",
+        "sample": "01ec5c0b-3350-4462-a09e-673fc27d228a"
+      },
+      "FreightType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Air"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "上海市"
+      },
+      "TotalWeight": {
+        "type": "decimal",
+        "sample": "3.0"
+      },
+      "FreightAmount": {
+        "type": "decimal",
+        "sample": "39.0"
+      },
+      "Reason": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CalculateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-01-13 00:00:00"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "超级管理员"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-01-12 22:35:09"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "IncludeFirstWeight": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 5,
+    "error": null
+  },
+  "JianCaiDetail": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "393700"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "JianCaiID": {
+        "type": "int",
+        "sample": "13114"
+      },
+      "outer_sku_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "生态原味炒花生（带壳）"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "生态原味炒花生（带壳）"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "1袋：300g/袋"
+      },
+      "GoodsType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "BinQty": {
+        "type": "int",
+        "sample": "51"
+      },
+      "BinText": {
+        "type": "string",
+        "sample": "A-5-2-3-2,A-1-1-2-3,A-2-1-2-1,K-2-5"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "分组"
+      },
+      "OrderIDList": {
+        "type": "string",
+        "sample": "e707ae39-2755-4766-b38e-7bc79ad618ab[1]"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3365"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "绿手指"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-13 09:59:16"
+      }
+    },
+    "total": 393013,
+    "error": null
+  },
+  "StaffInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "22"
+      },
+      "StaffName": {
+        "type": "string",
+        "sample": "瓜娃子"
+      },
+      "Phone": {
+        "type": "numeric(string)",
+        "sample": "13380613693"
+      },
+      "QRCodeURL": {
+        "type": "string",
+        "sample": "https://img01.yzcdn.cn/upload_files/2026/03/10/FpGrAmaBt8VTY"
+      },
+      "CreateID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "3365"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "绿手指"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-03-10 16:09:27"
+      },
+      "MemberList": {
+        "type": "string",
+        "sample": "20565,20564"
+      }
+    },
+    "total": 10,
+    "error": null
+  },
+  "JstOrder": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "170744"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "LocalJstCode": {
+        "type": "string",
+        "sample": "HT20261115100908014763372"
+      },
+      "JstID": {
+        "type": "numeric(string)",
+        "sample": "4118484"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "14763"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "郭丽梅"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18705357251"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "N0000"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "浙江省衢州市柯城区九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "ZITI"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "Status": {
+        "type": "string",
+        "sample": "Completed"
+      },
+      "ExpressCode": {
+        "type": "numeric(string)",
+        "sample": "117343240004118484"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "FreezeText": {
+        "type": "string",
+        "sample": "【生态凤梨番茄绿豆蔻复合酱（65g*1瓶）×2】【有机番石榴果酱（有机胭脂红番石榴果酱：65g/瓶*1瓶）×4】【生态金"
+      },
+      "MeatText": {
+        "type": "string",
+        "sample": ""
+      },
+      "NormalText": {
+        "type": "string",
+        "sample": "【禾然有机酱油（500ml）×2】【禾然有机番茄沙司（330g）×2】【禾然有机豆瓣酱（300g）×2】【禾然有机糙米醋"
+      },
+      "FenEText": {
+        "type": "string",
+        "sample": ""
+      },
+      "LikeProduct": {
+        "type": "string",
+        "sample": ""
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": ""
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "YujiCaipin": {
+        "type": "string",
+        "sample": ""
+      },
+      "pay_amount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "freight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "amount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "payment": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OrderIDList": {
+        "type": "guid",
+        "sample": "3b270e41-49e5-4a22-b3ee-3bec8112b012"
+      },
+      "DetailIDList": {
+        "type": "string",
+        "sample": "d03924fa-bdea-46d6-a258-94a06b0674c7,56f4dec5-ede5-4b70-a9d9"
+      },
+      "ShipIDList": {
+        "type": "string",
+        "sample": "0a57890f-c5e9-4500-97e1-ef34bcfb3d32,0defc22f-29e4-4201-8cdb"
+      },
+      "TidList": {
+        "type": "string",
+        "sample": "E20261115095039038206149,E20261115095039038206149,E202611150"
+      },
+      "RemainTimeList": {
+        "type": "string",
+        "sample": ""
+      },
+      "RemainCountList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "shop_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "shop_status": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "浙江省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "衢州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "柯城区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "BoxType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AddressShortName": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:09:09"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "4058"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:09:22"
+      },
+      "ShipContent": {
+        "type": "string",
+        "sample": ""
+      }
+    },
+    "total": 166649,
+    "error": null
+  },
+  "addressinfoSelfFetchPoint": {
+    "fields": {
+      "AddressID": {
+        "type": "int",
+        "sample": "65218"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "1"
+      },
+      "AddressName": {
+        "type": "string",
+        "sample": "隔壁阿金的周末市集：限市集现场下单，自提日期4.30-5.2"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "隔壁阿金的周末市集：限市集现场下单"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "绿手指"
+      },
+      "AgeingText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "上海市上海市长宁区茅台路179号(娄山关路地铁站3号口步行230米)金虹桥商场"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15018336122"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "fetch"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AddressType": {
+        "type": "string",
+        "sample": "Ziti"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "上海市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "长宁区"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "上海市"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "茅台路179号(娄山关路地铁站3号口步行230米)金虹桥商场"
+      },
+      "ShipCompany": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Weekly": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3365"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "绿手指"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-07-21 14:48:28"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Lat": {
+        "type": "decimal",
+        "sample": "31.2148252961359"
+      },
+      "Lon": {
+        "type": "decimal",
+        "sample": "121.409178364707"
+      },
+      "StoreID": {
+        "type": "int",
+        "sample": "59883361"
+      }
+    },
+    "total": 41,
+    "error": null
+  },
+  "YujiInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "51822"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "FeneType": {
+        "type": "string",
+        "sample": "douya"
+      },
+      "CaipinName": {
+        "type": "string",
+        "sample": "绿豆芽"
+      },
+      "BackupCaipinName": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Weight": {
+        "type": "decimal",
+        "sample": "1.0"
+      },
+      "GoodTitle": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AliasName": {
+        "type": "unknown",
+        "sample": null
+      },
+      "JstSkuCode": {
+        "type": "string",
+        "sample": "ZCZF-DYFE-1F2-Y-L013"
+      },
+      "OrderJstSkuCode": {
+        "type": "string",
+        "sample": "ZCZF-DYFE-1F2-Y-L013"
+      },
+      "GoodJstSkuCode": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "CaipinID": {
+        "type": "int",
+        "sample": "6"
+      },
+      "BackupCaipinID": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 41729,
+    "error": null
+  },
+  "CaipinInfo": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "711"
+      },
+      "GreenCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "FeneType": {
+        "type": "string",
+        "sample": "shucai"
+      },
+      "CaipinType": {
+        "type": "string",
+        "sample": "peiliao"
+      },
+      "CaiName": {
+        "type": "string",
+        "sample": "冻干蒜苗干"
+      },
+      "AliasName": {
+        "type": "string",
+        "sample": "蒜苗"
+      },
+      "Enable": {
+        "type": "int",
+        "sample": "1"
+      },
+      "GoodJstSkuCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3366"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "菜菜子"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-05 08:32:47"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "3379"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "采配"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-22 19:01:01"
+      },
+      "UnLikeEnable": {
+        "type": "int",
+        "sample": "1"
+      }
+    },
+    "total": 317,
+    "error": null
+  },
+  "OrderInfoToAduited": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "5f90ba24-6b59-4570-8296-e5cea963bdc3"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115103035042002141"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "亚广"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15335193902"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "生态九烤竹盐莲子茶酥 、生态厚切苹果干  、生态炭烤猪肉脯 等3件商品"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "待发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "1"
+      },
+      "TotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江苏省南京市建邺区南苑街道所街171号新悦天地15幢1703"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Both"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipedCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:30:36"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "13174"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "ogzxrGJE643837992951156736"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "15335193902"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "MatchOrderID": {
+        "type": "guid",
+        "sample": "034c578e-86fb-4144-a693-235d09ce5235"
+      },
+      "WantShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-18 00:00:00"
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_SELLER_SEND_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:30:45"
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:32:53"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 11:30:36"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "otlGYjtqWBOgQmLaEQkUNHZYHU44"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江苏省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "南京市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "建邺区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "南苑街道所街171号新悦天地15幢1703"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "186278013"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:34:03"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:34:03"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "15262"
+      },
+      "IsSyncToLocal": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "string",
+        "sample": "DoSuiFenE"
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "string",
+        "sample": "匹配份额成功。"
+      },
+      "DetailShortNameList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailSkuTextList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailPriceList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainTimesList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainCountList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "车厘子"
+      }
+    },
+    "total": 281,
+    "error": null
+  },
+  "orderinfo_archive": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "8da34bac-6a08-400e-8cd0-30aa0122ff74"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261013162504096300071"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "21889"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "29790"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "陈家啡"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "13979484300"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江西省抚州市临川区揭暄大道博雅和苑1栋901"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)、生态八角、生态火腿肠、生态红薯(积分兑换，品种随机、生态红薯粉丝、生态肉桂、生态榨菜丝等7件商品"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "IsSyncToLocal": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_BUYER_CONFIRM_GOODS"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "已发货"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 16:25:24"
+      },
+      "consign_time": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 18:00:40"
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 16:25:05"
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 18:00:40"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 17:25:05"
+      },
+      "MatchOrderID": {
+        "type": "guid",
+        "sample": "238673ef-bf2d-475f-8f35-7949e3f4c7ca"
+      },
+      "WantShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 00:00:00"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "5"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江西省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "抚州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "临川区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "揭暄大道博雅和苑1栋901"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "2"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "186278013"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 16:28:05"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 18:02:07"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "on8wz0Hh618335342696660992"
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4vR6Ba46PknAkgx2QwJgSmk"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "13979484300"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "string",
+        "sample": "红薯粉丝缺货  退款  23.75元  一万 1019"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "string",
+        "sample": "DoSuiFenE"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "199.12"
+      },
+      "TotalGoodPrice": {
+        "type": "decimal",
+        "sample": "199.12"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "decimal",
+        "sample": "175.37"
+      },
+      "TotalDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "string",
+        "sample": "匹配份额成功。"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Both"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "int",
+        "sample": "6"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "TotalShipCount": {
+        "type": "numeric(string)",
+        "sample": "8"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "DetailShortNameList": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)|生态八角|生态火腿肠|生态红薯(积分兑换，品种随机|生态红薯粉丝|生态肉桂|生态榨菜丝"
+      },
+      "DetailSkuTextList": {
+        "type": "string",
+        "sample": "1袋（90g/片*10片/袋*1）|1瓶（80g/瓶）|500g/袋（5根）|1.5斤（品种随机）|480g/盒*1盒|"
+      },
+      "DetailPriceList": {
+        "type": "string",
+        "sample": "43.00|23.00|78.00|19.50|25.00|27.00|6.80"
+      },
+      "DetailRemainTimesList": {
+        "type": "string",
+        "sample": "0|0|0|0|1|0|0"
+      },
+      "DetailRemainCountList": {
+        "type": "string",
+        "sample": "0|0|0|0|1|0|0"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "瓜娃子"
+      }
+    },
+    "total": 26602,
+    "error": null
+  },
+  "OrderInfoAduited": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "15be23f1-c2de-4161-9a6e-bbb223c56459"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Xianxia"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "G20261115092523015768746"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "陈秋月"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "13570021238"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "赠送蔬菜等1件商品"
+      },
+      "status_str": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "2"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "TotalGoodPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "TotalDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省广州市海珠区阅江路琶洲塔公园旁保利天悦 11栋402"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "int",
+        "sample": "0"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "TotalShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:25:23"
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "15768"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "nKFaOrU0610796397532307456"
+      },
+      "express_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "13570021238"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址0"
+      },
+      "MatchOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WantShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "status": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "expired_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "广州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "海珠区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "阅江路琶洲塔公园旁保利天悦 11栋402"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type_str": {
+        "type": "unknown",
+        "sample": null
+      },
+      "close_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "refund_state": {
+        "type": "unknown",
+        "sample": null
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "unknown",
+        "sample": null
+      },
+      "root_kdt_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "node_kdt_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:25:23"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-08 17:45:24"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "19680"
+      },
+      "IsSyncToLocal": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailShortNameList": {
+        "type": "string",
+        "sample": "赠送蔬菜"
+      },
+      "DetailSkuTextList": {
+        "type": "string",
+        "sample": "500g"
+      },
+      "DetailPriceList": {
+        "type": "string",
+        "sample": ""
+      },
+      "DetailRemainTimesList": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "DetailRemainCountList": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "梧桐子"
+      }
+    },
+    "total": 3917,
+    "error": null
+  },
+  "shipinfo_archive": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "1facd289-691f-4cc5-adf2-c5967aaaab3b"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "8da34bac-6a08-400e-8cd0-30aa0122ff74"
+      },
+      "DetailID": {
+        "type": "guid",
+        "sample": "08b4edac-7f5d-433d-8234-35924334c07c"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "21889"
+      },
+      "AutoID": {
+        "type": "int",
+        "sample": "39024"
+      },
+      "FullName": {
+        "type": "string",
+        "sample": "生态手抓饼(新版) | 合作生产*Ecological Shou Zhua Bing | Coproduction"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "陈家啡"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "13979484300"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江西省抚州市临川区揭暄大道博雅和苑1栋901"
+      },
+      "Count": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "1袋（90g/片*10片/袋*1）"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 00:00:00"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "ShipContent": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipMan": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "numeric(string)",
+        "sample": "43.00"
+      },
+      "discount_price": {
+        "type": "numeric(string)",
+        "sample": "40.85"
+      },
+      "GoodLabels": {
+        "type": "string",
+        "sample": "必选1：合作生产,必选2：温区-冷冻,必选3：采配库存维护,急需补货商品"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "2"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江西省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "抚州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "临川区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "揭暄大道博雅和苑1栋901"
+      },
+      "OldShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-14 09:16:42"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 18:00:40"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "UnBox"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "40.85"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "40.85"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址1"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Freeze"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "37306"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "item_id": {
+        "type": "numeric(string)",
+        "sample": "4376233755"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261013162504096300071"
+      },
+      "SyncJstStatus": {
+        "type": "string",
+        "sample": "Sent"
+      },
+      "DateText": {
+        "type": "string",
+        "sample": "Monday"
+      },
+      "LocalJstCode": {
+        "type": "string",
+        "sample": "HT20261019093507021889945"
+      },
+      "JstExpressCode": {
+        "type": "string",
+        "sample": "SF5141364238332"
+      },
+      "YzExpressStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "瓜娃子"
+      },
+      "isCollectedFreight": {
+        "type": "int",
+        "sample": "0"
+      },
+      "CollectedFreightPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BoxGiftCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SubGiftCount": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 337411,
+    "error": null
+  },
+  "OrderInfoPaused": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "04b51e6e-b524-4c5f-a06a-de977f0e9bb6"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261112201957018806221"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "张蕾"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18026219421"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "野生东山岛小银鱼等1件商品"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "待发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "4"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "34.2"
+      },
+      "TotalGoodPrice": {
+        "type": "decimal",
+        "sample": "34.2"
+      },
+      "TotalDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "K0001"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省广州市天河区暨南大学暨南花园32栋503"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Air"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "int",
+        "sample": "0"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "TotalShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-12 20:19:58"
+      },
+      "buyer_message": {
+        "type": "unknown",
+        "sample": null
+      },
+      "trade_memo": {
+        "type": "string",
+        "sample": "份额暂停中"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "15623"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "Iri52Jt7609828135482982400"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "18026219421"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址2"
+      },
+      "MatchOrderID": {
+        "type": "guid",
+        "sample": "4d4dde90-b298-4306-b92d-83f26774bc62"
+      },
+      "WantShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_SELLER_SEND_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-12 20:20:07"
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-12 20:22:08"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-12 21:19:58"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4vKcG8v2jvZ8GOVRSdwaHoc"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "广州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "天河区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "暨南大学暨南花园32栋503"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "76205567"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-12 20:22:13"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Modifier": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-14 09:07:38"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "19648"
+      },
+      "IsSyncToLocal": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "string",
+        "sample": "DoSuiFenE"
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "string",
+        "sample": "匹配份额成功。"
+      },
+      "DetailShortNameList": {
+        "type": "string",
+        "sample": "野生东山岛小银鱼"
+      },
+      "DetailSkuTextList": {
+        "type": "string",
+        "sample": "180g/盒"
+      },
+      "DetailPriceList": {
+        "type": "numeric(string)",
+        "sample": "36.00"
+      },
+      "DetailRemainTimesList": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "DetailRemainCountList": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "大妹子"
+      }
+    },
+    "total": 1409,
+    "error": null
+  },
+  "OrderInfoProblem": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "2bd2c94b-f8b0-4d98-bb59-bdf7df3a86d9"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115104156018806151"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "张蕾"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18026219421"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "有机山楂 等1件商品"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "待发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "5"
+      },
+      "TotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "fetch"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "广东省珠海市金湾区平沙镇大虎村斗东二格"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipedTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipedCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:41:57"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "15623"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "Iri52Jt7609828135482982400"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "18026219421"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "随蔬菜份额一起配送"
+      },
+      "MatchOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WantShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_SELLER_SEND_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:42:06"
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:08"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 11:41:57"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4vKcG8v2jvZ8GOVRSdwaHoc"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "广东省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "珠海市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "金湾区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "平沙镇大虎村斗东二格"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "76205567"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:44:04"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:46:04"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "10028"
+      },
+      "IsSyncToLocal": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "string",
+        "sample": "NotFindFenE"
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "string",
+        "sample": "没有找到符合条件的份额订单!"
+      },
+      "DetailShortNameList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailSkuTextList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailPriceList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainTimesList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainCountList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "大妹子"
+      }
+    },
+    "total": 5,
+    "error": null
+  },
+  "OrderInfoCompleted": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "3b270e41-49e5-4a22-b3ee-3bec8112b012"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115095039038206149"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "郭丽梅"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18705357251"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "禾然有机乐童酱油、生态金桔果酱、禾然有机米香料酒、禾然有机糙米醋、禾然有机乐童番茄沙司、生态凤梨番茄绿豆蔻复合酱、禾然有"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "已发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "3"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "0.01"
+      },
+      "TotalGoodPrice": {
+        "type": "decimal",
+        "sample": "0.01"
+      },
+      "TotalDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "fetch"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "string",
+        "sample": "N0000"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "浙江省衢州市柯城区九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "TotalShipedGoodPrice": {
+        "type": "decimal",
+        "sample": "0.02"
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "ZITI"
+      },
+      "ShipedTimes": {
+        "type": "int",
+        "sample": "12"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "0"
+      },
+      "TotalShipCount": {
+        "type": "numeric(string)",
+        "sample": "26"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "26"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:50:39"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "string",
+        "sample": "货物已提走了，不用再出库"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "14763"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "1MGE6CKb607125625441890304"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "18705357251"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "衢州农场"
+      },
+      "MatchOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WantShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_BUYER_CONFIRM_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:56:44"
+      },
+      "consign_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:15:05"
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:15:05"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:50:39"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4rxnHYDcTAVppCrfIuemD-0"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "浙江省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "衢州市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "柯城区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "九华乡上铺村绿手指有机农场华东仓采配中心——【衢州农场】"
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "186278013"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:58:03"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:16:13"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "22714"
+      },
+      "IsSyncToLocal": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "string",
+        "sample": "NotSuiFenE"
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailShortNameList": {
+        "type": "string",
+        "sample": "禾然有机乐童酱油|生态金桔果酱|禾然有机米香料酒|禾然有机糙米醋|禾然有机乐童番茄沙司|生态凤梨番茄绿豆蔻复合酱|禾然有"
+      },
+      "DetailSkuTextList": {
+        "type": "string",
+        "sample": "160ml|65g*1瓶|500ml|500ml|320g（乐童）|65g*1瓶|330g|248ml|340g|500"
+      },
+      "DetailPriceList": {
+        "type": "string",
+        "sample": "29.80|18.00|35.80|35.80|35.80|25.00|33.80|24.80|28.80|36.80|"
+      },
+      "DetailRemainTimesList": {
+        "type": "string",
+        "sample": "0|0|0|0|0|0|0|0|0|0|0|0"
+      },
+      "DetailRemainCountList": {
+        "type": "string",
+        "sample": "0|0|0|0|0|0|0|0|0|0|0|0"
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "梧桐子"
+      }
+    },
+    "total": 66332,
+    "error": null
+  },
+  "OrderInfoSandan": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "8c4c6a76-2e5a-45ad-b108-32b691f34fd9"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115105337075106205"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "黄建华"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18070189087"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "有机大米（籼米）等1件商品"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "待发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "6"
+      },
+      "TotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江西省鹰潭市月湖区林荫西路13号4 "
+      },
+      "TotalShipedGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipedCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:53:38"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "11718"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "ycVJRB7o608309187163750400"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "18070189087"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址4"
+      },
+      "MatchOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WantShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_SELLER_SEND_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:53:52"
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:55:42"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 11:53:38"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4mVXEosyXpTePt9VN6GYixk"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江西省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "鹰潭市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "月湖区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "林荫西路13号4 "
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "186278013"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:54:04"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:04"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "40655"
+      },
+      "IsSyncToLocal": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailShortNameList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailSkuTextList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailPriceList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainTimesList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainCountList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "大妹子"
+      }
+    },
+    "total": 226784,
+    "error": null
+  },
+  "OrderInfo": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "8c4c6a76-2e5a-45ad-b108-32b691f34fd9"
+      },
+      "PlatformType": {
+        "type": "string",
+        "sample": "Youzan"
+      },
+      "tid": {
+        "type": "string",
+        "sample": "E20261115105337075106205"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "黄建华"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "18070189087"
+      },
+      "Title": {
+        "type": "string",
+        "sample": "有机大米（籼米）等1件商品"
+      },
+      "status_str": {
+        "type": "string",
+        "sample": "待发货"
+      },
+      "OrderStatus": {
+        "type": "int",
+        "sample": "6"
+      },
+      "TotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "OrderType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "AgeingText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "江西省鹰潭市月湖区林荫西路13号4 "
+      },
+      "TotalShipedGoodPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipedDeliveryFee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "ShipedTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipTimes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "TotalShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipedCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RemainShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "created": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:53:38"
+      },
+      "buyer_message": {
+        "type": "string",
+        "sample": ""
+      },
+      "trade_memo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "11718"
+      },
+      "yz_open_id": {
+        "type": "string",
+        "sample": "ycVJRB7o608309187163750400"
+      },
+      "express_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "buyer_phone": {
+        "type": "numeric(string)",
+        "sample": "18070189087"
+      },
+      "AddressShortName": {
+        "type": "string",
+        "sample": "地址4"
+      },
+      "MatchOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "WantShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "status": {
+        "type": "string",
+        "sample": "WAIT_SELLER_SEND_GOODS"
+      },
+      "pay_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:53:52"
+      },
+      "consign_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "confirm_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "success_time": {
+        "type": "unknown",
+        "sample": null
+      },
+      "update_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:55:42"
+      },
+      "expired_time": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 11:53:38"
+      },
+      "buyer_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_user_id": {
+        "type": "string",
+        "sample": "oUtKt4mVXEosyXpTePt9VN6GYixk"
+      },
+      "type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "ProvinceName": {
+        "type": "string",
+        "sample": "江西省"
+      },
+      "CityName": {
+        "type": "string",
+        "sample": "鹰潭市"
+      },
+      "CountyName": {
+        "type": "string",
+        "sample": "月湖区"
+      },
+      "AddressText": {
+        "type": "string",
+        "sample": "林荫西路13号4 "
+      },
+      "PhoneAreaCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pay_type": {
+        "type": "numeric(string)",
+        "sample": "10"
+      },
+      "pay_type_str": {
+        "type": "string",
+        "sample": "WEIXIN_DAIXIAO"
+      },
+      "close_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "refund_state": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "activity_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_retail_order": {
+        "type": "bool",
+        "sample": "True"
+      },
+      "root_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "18091940"
+      },
+      "node_kdt_id": {
+        "type": "numeric(string)",
+        "sample": "186278013"
+      },
+      "offline_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "team_type": {
+        "type": "numeric(string)",
+        "sample": "7"
+      },
+      "order_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:54:04"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:04"
+      },
+      "AddressID": {
+        "type": "int",
+        "sample": "40655"
+      },
+      "IsSyncToLocal": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldOrderID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "SuiFenePeisongStatus": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldTotalPrice": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OldShipCount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionalReson": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailShortNameList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailSkuTextList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailPriceList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainTimesList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DetailRemainCountList": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Staff": {
+        "type": "string",
+        "sample": "大妹子"
+      }
+    },
+    "total": 298728,
+    "error": null
+  },
+  "Sys_Log": {
+    "fields": {
+      "Id": {
+        "type": "int",
+        "sample": "4717702"
+      },
+      "BeginDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:36"
+      },
+      "UserName": {
+        "type": "string",
+        "sample": "覆盆子"
+      },
+      "Url": {
+        "type": "string",
+        "sample": "https://www.zhlsz.cn/api/OrderInfo/getPageData"
+      },
+      "LogType": {
+        "type": "string",
+        "sample": "查询"
+      },
+      "Success": {
+        "type": "int",
+        "sample": "3"
+      },
+      "ElapsedTime": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RequestParameter": {
+        "type": "string",
+        "sample": "{\"page\": 1, \"rows\": 1, \"order\": \"desc\", \"wheres\": \"[]\"}"
+      },
+      "ResponseParameter": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ExceptionInfo": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UserIP": {
+        "type": "string",
+        "sample": "36.141.78.141"
+      },
+      "ServiceIP": {
+        "type": "string",
+        "sample": "172.25.74.140:443"
+      },
+      "BrowserType": {
+        "type": "string",
+        "sample": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+      },
+      "User_Id": {
+        "type": "int",
+        "sample": "3390"
+      },
+      "Role_Id": {
+        "type": "int",
+        "sample": "8"
+      },
+      "EndDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:37"
+      }
+    },
+    "total": 3597675,
+    "error": null
+  },
+  "ApiLog": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "688394"
+      },
+      "ServiceName": {
+        "type": "string",
+        "sample": "有赞"
+      },
+      "ServiceType": {
+        "type": "string",
+        "sample": "订单同步"
+      },
+      "TotalCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "InsertCount": {
+        "type": "int",
+        "sample": "0"
+      },
+      "UpdateCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "2"
+      },
+      "TimeConsuming": {
+        "type": "int",
+        "sample": "2"
+      },
+      "StartRunTime": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:02"
+      },
+      "ModifiedBegin": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:54:03"
+      },
+      "ModifiedEnd": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:02"
+      },
+      "Message": {
+        "type": "string",
+        "sample": "本次调用API【1】次，共获取数据【1】条，其中插入主订单【0】条，明细订单【0】条，更新主订单【1】条，明细订单【0】"
+      },
+      "APiMainURL": {
+        "type": "string",
+        "sample": "https://open.youzanyun.com/"
+      },
+      "APiDetailURL": {
+        "type": "string",
+        "sample": "api/youzan.trades.sold.get/4.0.4"
+      },
+      "AccessToken": {
+        "type": "string",
+        "sample": "1b7656d2769a0aed9c878adeabc3d46"
+      },
+      "AppKey": {
+        "type": "unknown",
+        "sample": null
+      },
+      "AppSecret": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherParameters": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:02"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 661169,
+    "error": null
+  },
+  "GreenLog": {
+    "fields": {
+      "ActionName": {
+        "type": "string",
+        "sample": "有赞订单状态更新"
+      },
+      "LogContent": {
+        "type": "string",
+        "sample": "【2026-11-15 10:56:04】同步有赞订单状态更新。订单【有机大米（籼米）等1件商品（E2026111510"
+      },
+      "LogType": {
+        "type": "string",
+        "sample": "Edit"
+      },
+      "UserIP": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:04"
+      },
+      "ID": {
+        "type": "int",
+        "sample": "2137171"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "8c4c6a76-2e5a-45ad-b108-32b691f34fd9"
+      },
+      "DetailID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:04"
+      },
+      "LocalJstCode": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 2127468,
+    "error": null
+  },
+  "OrderDetail": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "befcb531-c77f-4fc7-9a5d-8d11b07298dc"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "赠送蔬菜"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "500g"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "outer_sku_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "ZCZF-ZSSC-500G-X-L008"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "SingleCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "TotalCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "LoopShipCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "LoopShipedTimes": {
+        "type": "int",
+        "sample": "0"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "GoodLabels": {
+        "type": "string",
+        "sample": "必选1：绿家自产,必选2：温区-冷藏,必选3：非采配库存维护"
+      },
+      "LoopShipType": {
+        "type": "string",
+        "sample": "Single"
+      },
+      "LoopShipDescription": {
+        "type": "string",
+        "sample": "单次配送1份"
+      },
+      "StartShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "LastShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "Box"
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "赠送蔬菜"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "string",
+        "sample": "香菜"
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Status": {
+        "type": "int",
+        "sample": "2"
+      },
+      "EndShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "payment": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LoopShipDetail": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "title": {
+        "type": "string",
+        "sample": "赠送蔬菜"
+      },
+      "item_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "15be23f1-c2de-4161-9a6e-bbb223c56459"
+      },
+      "num": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "YzTID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "oid": {
+        "type": "unknown",
+        "sample": null
+      },
+      "price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "total_fee": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_present": {
+        "type": "unknown",
+        "sample": null
+      },
+      "buyer_messages": {
+        "type": "unknown",
+        "sample": null
+      },
+      "item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "item_no": {
+        "type": "unknown",
+        "sample": null
+      },
+      "outer_item_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sku_no": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sku_id": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sku_unique_code": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sku_properties_name": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pre_sale_type": {
+        "type": "unknown",
+        "sample": null
+      },
+      "item_barcode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sku_barcode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pic_path": {
+        "type": "unknown",
+        "sample": null
+      },
+      "goods_url": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_pre_sale": {
+        "type": "unknown",
+        "sample": null
+      },
+      "discount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "freight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "points_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "tax_total": {
+        "type": "unknown",
+        "sample": null
+      },
+      "alias": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_cross_border": {
+        "type": "unknown",
+        "sample": null
+      },
+      "goods_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "customs_code": {
+        "type": "unknown",
+        "sample": null
+      },
+      "sub_order_no": {
+        "type": "unknown",
+        "sample": null
+      },
+      "goods_total_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "cross_border_trade_mode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_freight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_discount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_goods_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_goods_total_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_payment": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_tax_total": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3383"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "申晓隆"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:25:23"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "15768"
+      },
+      "AutoID": {
+        "type": "int",
+        "sample": "9064"
+      },
+      "OldDetailID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "13864"
+      },
+      "MatchDetailID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodShipWay": {
+        "type": "string",
+        "sample": "Both"
+      },
+      "MatchShipWay": {
+        "type": "unknown",
+        "sample": null
+      },
+      "RuleShipWay": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 1,
+    "error": null,
+    "note": "按单个 OrderID 过滤取样（全表 COUNT 超时）"
+  },
+  "MemberLog": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "427118"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "11718"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "8c4c6a76-2e5a-45ad-b108-32b691f34fd9"
+      },
+      "DetailID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ShipID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "系统"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:56:04"
+      },
+      "LogContent": {
+        "type": "string",
+        "sample": "【2026-11-15 10:56:04】系统有赞更新订单【有机大米（籼米）等1件商品（E202611151053370"
+      },
+      "LogType": {
+        "type": "string",
+        "sample": "Edit"
+      },
+      "UserIP": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ActionName": {
+        "type": "string",
+        "sample": "有赞更新订单"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 427105,
+    "error": null
+  },
+  "jstGood": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "38683"
+      },
+      "autoid": {
+        "type": "int",
+        "sample": "40495"
+      },
+      "sku_id": {
+        "type": "string",
+        "sample": "HZDF-YQD-XCF20ML-B-S132"
+      },
+      "akaJSTSkuID": {
+        "type": "string",
+        "sample": "HZDF-YQD-XCF20ML-B-S132"
+      },
+      "name": {
+        "type": "string",
+        "sample": "雅琪朵香蜂草沐浴露 20ml（赠品）"
+      },
+      "short_name": {
+        "type": "string",
+        "sample": "香蜂草沐浴露 20ml"
+      },
+      "BinText": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BinQty": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "香蜂草沐浴露 20ml"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "Box"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Both"
+      },
+      "SingleCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "TotalCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "LoopShipType": {
+        "type": "string",
+        "sample": "Single"
+      },
+      "LoopShipDetail": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "LoopShipDescription": {
+        "type": "string",
+        "sample": "单次配送"
+      },
+      "GoodsType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "properties_value": {
+        "type": "string",
+        "sample": "香蜂草沐浴露 20ml"
+      },
+      "labels": {
+        "type": "string",
+        "sample": "必选1：公平贸易,必选2：温区-常温,必选3：非采配库存维护,线下代发"
+      },
+      "sale_price": {
+        "type": "decimal",
+        "sample": "39.0"
+      },
+      "pic_big": {
+        "type": "unknown",
+        "sample": null
+      },
+      "pic": {
+        "type": "string",
+        "sample": "https://images-erp.sursung.com/prod/erp/ItemSku/11734324/202"
+      },
+      "AllowSyncJst": {
+        "type": "int",
+        "sample": "1"
+      },
+      "enabled": {
+        "type": "int",
+        "sample": "1"
+      },
+      "ShipType": {
+        "type": "unknown",
+        "sample": null
+      },
+      "i_id": {
+        "type": "numeric(string)",
+        "sample": "4083735808"
+      },
+      "ShowForSelector": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "OrderCode": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GoodsFrom": {
+        "type": "string",
+        "sample": "JST"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Normal"
+      },
+      "MatchWeight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "cost_price": {
+        "type": "decimal",
+        "sample": "9.0"
+      },
+      "category": {
+        "type": "string",
+        "sample": "非食品 - 洗护日用 - 身体清洁"
+      },
+      "weight": {
+        "type": "decimal",
+        "sample": "0.5"
+      },
+      "market_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "brand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "supplier_id": {
+        "type": "numeric(string)",
+        "sample": "6714677"
+      },
+      "supplier_name": {
+        "type": "string",
+        "sample": "S132福建雅琪朵"
+      },
+      "sku_code": {
+        "type": "unknown",
+        "sample": null
+      },
+      "supplier_sku_id": {
+        "type": "string",
+        "sample": ""
+      },
+      "supplier_i_id": {
+        "type": "string",
+        "sample": ""
+      },
+      "vc_name": {
+        "type": "string",
+        "sample": "有机生活"
+      },
+      "sku_type": {
+        "type": "string",
+        "sample": "normal"
+      },
+      "remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "item_type": {
+        "type": "string",
+        "sample": "成品"
+      },
+      "stock_disabled": {
+        "type": "int",
+        "sample": "1"
+      },
+      "unit": {
+        "type": "string",
+        "sample": "瓶"
+      },
+      "shelf_life": {
+        "type": "unknown",
+        "sample": null
+      },
+      "c_id": {
+        "type": "int",
+        "sample": "184578596"
+      },
+      "production_licence": {
+        "type": "unknown",
+        "sample": null
+      },
+      "l": {
+        "type": "unknown",
+        "sample": null
+      },
+      "w": {
+        "type": "unknown",
+        "sample": null
+      },
+      "h": {
+        "type": "unknown",
+        "sample": null
+      },
+      "is_series_number": {
+        "type": "bool",
+        "sample": "False"
+      },
+      "other_price_1": {
+        "type": "decimal",
+        "sample": "9.0"
+      },
+      "other_price_2": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_price_3": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_price_4": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_price_5": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_1": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_2": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_3": {
+        "type": "unknown",
+        "sample": null
+      },
+      "other_4": {
+        "type": "string",
+        "sample": "全年"
+      },
+      "other_5": {
+        "type": "string",
+        "sample": "大白"
+      },
+      "stock_type": {
+        "type": "string",
+        "sample": "已禁止"
+      },
+      "sku_codes": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:15:01"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:15:01"
+      },
+      "LoopShipCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "isGift": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DefaultBoxCost": {
+        "type": "unknown",
+        "sample": null
+      },
+      "DefaultSubCost": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 28548,
+    "error": null
+  },
+  "ShipPreCheckBatch": {
+    "fields": {
+      "BatchType": {
+        "type": "string",
+        "sample": "PreCheck"
+      },
+      "BatchId": {
+        "type": "string",
+        "sample": "JG202611151009061260"
+      },
+      "StartDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "EndDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-16 00:00:00"
+      },
+      "SearchString": {
+        "type": "string",
+        "sample": "【发货基地:衢州基地】【运输公司:自提】【状态:待配送】【生成聚水潭】"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "ErrorMessage": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 10:09:09"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "ShipCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Remark": {
+        "type": "string",
+        "sample": "成功生成 1 个订单"
+      }
+    },
+    "total": 2793,
+    "error": null
+  },
+  "ShipPreCheckDetail": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "1848906"
+      },
+      "BatchId": {
+        "type": "string",
+        "sample": "JG202611150953178517"
+      },
+      "ShipID": {
+        "type": "guid",
+        "sample": "0cf05d31-98f3-4e66-be09-0a5adc85c88d"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "CaipinName": {
+        "type": "string",
+        "sample": "蜜本南瓜"
+      },
+      "OriginalCaipinName": {
+        "type": "unknown",
+        "sample": null
+      },
+      "IsReplaced": {
+        "type": "int",
+        "sample": "0"
+      },
+      "ReplaceProcess": {
+        "type": "string",
+        "sample": "00473.库存充足，直接使用原菜品【蜜本南瓜】（初始库存100斤，扣减1斤，剩余60斤）"
+      },
+      "Count": {
+        "type": "int",
+        "sample": "1"
+      },
+      "Weight": {
+        "type": "decimal",
+        "sample": "1.0"
+      },
+      "GoodJstSkuCode": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "24年"
+      },
+      "ReplaceReason": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ErrorMessage": {
+        "type": "string",
+        "sample": ""
+      },
+      "DeductedWeight": {
+        "type": "decimal",
+        "sample": "1.0"
+      },
+      "Status": {
+        "type": "int",
+        "sample": "1"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "22649"
+      },
+      "ConsigneeName": {
+        "type": "string",
+        "sample": "陈凯君"
+      },
+      "PhoneNumber": {
+        "type": "numeric(string)",
+        "sample": "15057907945"
+      },
+      "WholeAddress": {
+        "type": "string",
+        "sample": "浙江省金华市义乌市后宅街道金城高尔夫二期29栋3单元802"
+      },
+      "DailyStockId": {
+        "type": "int",
+        "sample": "22751"
+      },
+      "JstOrderCode": {
+        "type": "string",
+        "sample": ""
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:53:23"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "IsBackupUsed": {
+        "type": "int",
+        "sample": "0"
+      },
+      "BackupCaipinName": {
+        "type": "unknown",
+        "sample": null
+      },
+      "BackupCaipinID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OriginalYujiID": {
+        "type": "int",
+        "sample": "51754"
+      },
+      "CaipinID": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 1517142,
+    "error": null
+  },
+  "ShipPreCheckStat": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "152235"
+      },
+      "BatchId": {
+        "type": "string",
+        "sample": "JG202611150953178517"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "QZ"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "CaipinName": {
+        "type": "string",
+        "sample": "快菜"
+      },
+      "GoodJstSkuCode": {
+        "type": "string",
+        "sample": ""
+      },
+      "TotalCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "TotalWeight": {
+        "type": "decimal",
+        "sample": "1.0"
+      },
+      "StatLevel": {
+        "type": "int",
+        "sample": "2"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "叶子萌"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:53:23"
+      },
+      "CaipinID": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 150751,
+    "error": null
+  },
+  "orderdetail_archive": {
+    "fields": {
+      "ID": {
+        "type": "guid",
+        "sample": "08b4edac-7f5d-433d-8234-35924334c07c"
+      },
+      "OrderID": {
+        "type": "guid",
+        "sample": "8da34bac-6a08-400e-8cd0-30aa0122ff74"
+      },
+      "YzTID": {
+        "type": "string",
+        "sample": "E20261013162504096300071"
+      },
+      "oid": {
+        "type": "numeric(string)",
+        "sample": "3172082718697062501"
+      },
+      "title": {
+        "type": "string",
+        "sample": "生态手抓饼(新版) | 合作生产*Ecological Shou Zhua Bing | Coproduction"
+      },
+      "ShortName": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)"
+      },
+      "SkuText": {
+        "type": "string",
+        "sample": "1袋（90g/片*10片/袋*1）"
+      },
+      "DetailType": {
+        "type": "string",
+        "sample": "SanDan"
+      },
+      "outer_sku_id": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "price": {
+        "type": "numeric(string)",
+        "sample": "43.00"
+      },
+      "discount_price": {
+        "type": "numeric(string)",
+        "sample": "40.85"
+      },
+      "num": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "total_fee": {
+        "type": "numeric(string)",
+        "sample": "40.85"
+      },
+      "payment": {
+        "type": "numeric(string)",
+        "sample": "40.85"
+      },
+      "AutoID": {
+        "type": "int",
+        "sample": "39024"
+      },
+      "ShipType": {
+        "type": "string",
+        "sample": "express"
+      },
+      "GoodLabels": {
+        "type": "string",
+        "sample": "必选1：合作生产,必选2：温区-冷冻,必选3：采配库存维护,急需补货商品"
+      },
+      "StartShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 00:00:00"
+      },
+      "LastShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-19 00:00:00"
+      },
+      "EndShipDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "LoopShipCount": {
+        "type": "int",
+        "sample": "1"
+      },
+      "LoopShipedTimes": {
+        "type": "int",
+        "sample": "1"
+      },
+      "LoopShipType": {
+        "type": "string",
+        "sample": "Weekly"
+      },
+      "LoopShipDetail": {
+        "type": "string",
+        "sample": "1,1"
+      },
+      "LoopShipDescription": {
+        "type": "string",
+        "sample": "每1周的星期一配送。"
+      },
+      "LikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "UnLikeProduct": {
+        "type": "unknown",
+        "sample": null
+      },
+      "OtherDemand": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Remark": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Status": {
+        "type": "int",
+        "sample": "3"
+      },
+      "item_type": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "is_present": {
+        "type": "bool",
+        "sample": "False"
+      },
+      "buyer_messages": {
+        "type": "string",
+        "sample": "{}"
+      },
+      "item_id": {
+        "type": "numeric(string)",
+        "sample": "4376233755"
+      },
+      "item_no": {
+        "type": "string",
+        "sample": "BM251023867117642"
+      },
+      "outer_item_id": {
+        "type": "numeric(string)",
+        "sample": "697813910184"
+      },
+      "sku_no": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "sku_id": {
+        "type": "numeric(string)",
+        "sample": "24614297963"
+      },
+      "sku_unique_code": {
+        "type": "numeric(string)",
+        "sample": "437623375524614297963"
+      },
+      "sku_properties_name": {
+        "type": "string",
+        "sample": "[{\"k\":\"规格\",\"k_id\":14,\"v\":\"1袋（90g/片*10片/袋*1）\",\"v_id\":54200071"
+      },
+      "pre_sale_type": {
+        "type": "string",
+        "sample": ""
+      },
+      "item_barcode": {
+        "type": "numeric(string)",
+        "sample": "697813910184"
+      },
+      "sku_barcode": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "pic_path": {
+        "type": "string",
+        "sample": "https://img.yzcdn.cn/upload_files/item_watermark/2026/07/28/"
+      },
+      "goods_url": {
+        "type": "string",
+        "sample": "https://h5.youzan.com/v2/showcase/goods?alias=3615p48u5ps0ty"
+      },
+      "is_pre_sale": {
+        "type": "string",
+        "sample": ""
+      },
+      "discount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "freight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "points_price": {
+        "type": "numeric(string)",
+        "sample": "0"
+      },
+      "tax_total": {
+        "type": "unknown",
+        "sample": null
+      },
+      "alias": {
+        "type": "string",
+        "sample": "3615p48u5ps0ty9"
+      },
+      "is_cross_border": {
+        "type": "string",
+        "sample": ""
+      },
+      "goods_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "customs_code": {
+        "type": "string",
+        "sample": ""
+      },
+      "sub_order_no": {
+        "type": "string",
+        "sample": ""
+      },
+      "goods_total_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "cross_border_trade_mode": {
+        "type": "string",
+        "sample": ""
+      },
+      "fenxiao_discount_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_price": {
+        "type": "numeric(string)",
+        "sample": "0.00"
+      },
+      "fenxiao_freight": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_discount": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_goods_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_goods_total_dutiable_price": {
+        "type": "unknown",
+        "sample": null
+      },
+      "fenxiao_payment": {
+        "type": "numeric(string)",
+        "sample": "0.00"
+      },
+      "fenxiao_tax_total": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Creator": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 16:28:06"
+      },
+      "ModifyID": {
+        "type": "int",
+        "sample": "0"
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "datetime(string)",
+        "sample": "2026-10-13 16:28:06"
+      },
+      "MemID": {
+        "type": "int",
+        "sample": "21889"
+      },
+      "OldDetailID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "GroupMark": {
+        "type": "string",
+        "sample": "生态手抓饼(新版)"
+      },
+      "ShipWay": {
+        "type": "string",
+        "sample": "Land"
+      },
+      "ShipCompany": {
+        "type": "string",
+        "sample": "SF"
+      },
+      "BoxType": {
+        "type": "string",
+        "sample": "UnBox"
+      },
+      "SingleCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "TotalCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "ShipedCount": {
+        "type": "numeric(string)",
+        "sample": "1"
+      },
+      "UnitPrice": {
+        "type": "decimal",
+        "sample": "40.85"
+      },
+      "TotalPrice": {
+        "type": "decimal",
+        "sample": "40.85"
+      },
+      "DeliveryFee": {
+        "type": "decimal",
+        "sample": "0.0"
+      },
+      "LocalDiscount": {
+        "type": "int",
+        "sample": "100"
+      },
+      "BagType": {
+        "type": "string",
+        "sample": "Freeze"
+      },
+      "JST_SKU_ID": {
+        "type": "string",
+        "sample": "HZZF-SZBXB-1D-XC-S393"
+      },
+      "GoodID": {
+        "type": "int",
+        "sample": "37306"
+      },
+      "RemainShipTimes": {
+        "type": "int",
+        "sample": "0"
+      },
+      "RemainShipCount": {
+        "type": "numeric(string)",
+        "sample": "0"
+      }
+    },
+    "total": 39189,
+    "error": null
+  },
+  "DailyCaipinStock": {
+    "fields": {
+      "ID": {
+        "type": "int",
+        "sample": "22853"
+      },
+      "WarehouseBase": {
+        "type": "string",
+        "sample": "ZH"
+      },
+      "ShipDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 00:00:00"
+      },
+      "FeneType": {
+        "type": "string",
+        "sample": "shucai"
+      },
+      "CaipinID": {
+        "type": "int",
+        "sample": "90"
+      },
+      "CaipinName": {
+        "type": "string",
+        "sample": "香菜"
+      },
+      "Stock": {
+        "type": "decimal",
+        "sample": "2.54"
+      },
+      "Weighting": {
+        "type": "int",
+        "sample": "1"
+      },
+      "CreateID": {
+        "type": "int",
+        "sample": "3379"
+      },
+      "Creator": {
+        "type": "string",
+        "sample": "采配"
+      },
+      "CreateDate": {
+        "type": "datetime(string)",
+        "sample": "2026-11-15 09:31:50"
+      },
+      "ModifyID": {
+        "type": "unknown",
+        "sample": null
+      },
+      "Modifier": {
+        "type": "unknown",
+        "sample": null
+      },
+      "ModifyDate": {
+        "type": "unknown",
+        "sample": null
+      },
+      "CaipinInfo": {
+        "type": "unknown",
+        "sample": null
+      }
+    },
+    "total": 15888,
+    "error": null
+  }
+}

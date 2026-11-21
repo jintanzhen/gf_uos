@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+backend/data/
+
+# Node
+node_modules/
+frontend/dist/
+
+# 环境与凭证
+.env
+*.db
+*.db-wal
+*.db-shm
+
+# IDE
+.idea/
+.vscode/

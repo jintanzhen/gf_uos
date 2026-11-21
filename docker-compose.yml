@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    container_name: greenos-backend
+    env_file: .env
+    environment:
+      - DATABASE_URL=sqlite:///./data/app.db
+    volumes:
+      - ./data:/app/data          # SQLite 文件持久化
+    restart: unless-stopped
+    # 如需从宿主机直接访问 Swagger：放开下一行
+    # ports: ["8000:8000"]
+
+  frontend:
+    build: ./frontend
+    container_name: greenos-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
