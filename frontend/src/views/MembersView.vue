@@ -65,6 +65,31 @@
           </el-descriptions-item>
         </el-descriptions>
 
+        <h4>会员标签</h4>
+        <div class="tag-block">
+          <template v-if="detail.tags && detail.tags.length">
+            <el-tag v-for="t in detail.tags" :key="t.id" size="small" class="member-tag"
+                    :type="t.tag_type === 'sys' ? 'primary' : 'warning'"
+                    :effect="t.tag_type === 'sys' ? 'plain' : 'light'"
+                    :closable="t.tag_type === 'manual'" @close="removeTag(t)">
+              {{ t.tag_key }}{{ t.tag_value ? '·' + t.tag_value : '' }}{{ t.expire_at ? `（至${t.expire_at.slice(0, 10)}）` : '' }}
+            </el-tag>
+          </template>
+          <span v-else class="dim">暂无标签</span>
+        </div>
+        <div class="tag-add">
+          <div class="tag-select-wrap" @input="onTagInput">
+            <el-select ref="tagSelectRef" v-model="newTagKey" filterable allow-create default-first-option
+                       placeholder="选择或输入标签名（可自定义）" style="width: 200px" size="small">
+              <el-option v-for="k in tagOptions" :key="k" :label="k" :value="k" />
+            </el-select>
+          </div>
+          <el-date-picker v-model="newTagExpire" type="date" placeholder="到期时间（可选）"
+                          value-format="YYYY-MM-DD" style="width: 160px" size="small" />
+          <el-button size="small" type="primary" plain @click="addTag">添加标签</el-button>
+        </div>
+        <div class="tag-hint">先选/输入标签名再点「添加标签」；自定义标签直接输入文字后点添加即可（无需回车）</div>
+
         <h4>份额明细</h4>
         <el-table :data="detail.shares" size="small" border>
           <el-table-column label="份额类型" width="100">
@@ -92,11 +117,16 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import {
   csMembers, csMemberDetail, opsMembers, opsMemberDetail,
   SHARE_TYPE_LABELS, ORDER_STATUS_LABELS,
   type MemberItem, type ShareItem,
 } from '../api/members'
+import {
+  addManualTag, addManualTagOps, deleteManualTag, deleteManualTagOps,
+  tagKeys, PRESET_TAG_KEYS, type MemberTag,
+} from '../api/tags'
 import { useAuthStore } from '../stores/auth'
 
 const store = useAuthStore()
@@ -109,7 +139,28 @@ const page = ref(1)
 const pageSize = 20
 const loading = ref(false)
 const detailVisible = ref(false)
-const detail = ref<{ member: MemberItem; cs_name?: string | null; shares: ShareItem[] } | null>(null)
+const detail = ref<{
+  member: MemberItem; cs_name?: string | null; shares: ShareItem[]; tags?: MemberTag[]
+} | null>(null)
+const newTagKey = ref('')
+const newTagExpire = ref<string | null>(null)
+const knownKeys = ref<string[]>([])
+const tagOptions = computed(() => Array.from(new Set([...PRESET_TAG_KEYS, ...knownKeys.value])))
+const tagSelectRef = ref<{ $el?: HTMLElement; focus?: () => void } | null>(null)
+const pendingQuery = ref('')
+
+function onTagInput(e: Event) {
+  const target = e.target as HTMLInputElement | null
+  if (target?.tagName === 'INPUT') pendingQuery.value = target.value ?? ''
+}
+
+function resolveTagKey(): string {
+  const selected = String(newTagKey.value ?? '').trim()
+  if (selected) return selected
+  // allow-create 下用户输入文字但未按回车/未选中选项时 v-model 仍为空，且点击按钮
+  // 会让选择器失焦清空内部输入框；故用输入过程中实时捕获的文本兜底。
+  return pendingQuery.value.trim()
+}
 
 function shareLabel(t?: string | null) {
   return t ? SHARE_TYPE_LABELS[t] || t : '-'
@@ -135,6 +186,44 @@ async function openDetail(row: MemberItem) {
     ? { ...(await csMemberDetail(row.id)) }
     : { ...(await opsMemberDetail(row.id)) }
   detailVisible.value = true
+  newTagKey.value = ''
+  pendingQuery.value = ''
+  newTagExpire.value = null
+  if (!isCs.value) {
+    try { knownKeys.value = await tagKeys() } catch { /* 词表拉取失败不阻断 */ }
+  }
+}
+
+async function addTag() {
+  if (!detail.value) return
+  const key = resolveTagKey()
+  if (!key) {
+    ElMessage.warning('请先选择或输入标签名（自定义标签可直接输入文字后点添加）')
+    tagSelectRef.value?.focus?.()
+    return
+  }
+  const body = { tag_key: key, expire_at: newTagExpire.value || null }
+  try {
+    if (isCs.value) await addManualTag(detail.value.member.id, body)
+    else await addManualTagOps(detail.value.member.id, body)
+    ElMessage.success(`标签「${body.tag_key}」已添加`)
+  } catch (e: unknown) {
+    const resp = (e as { response?: { data?: { detail?: string } } })?.response
+    ElMessage.error(resp?.data?.detail || '添加失败')
+    return
+  }
+  await openDetail(detail.value.member as MemberItem)
+}
+
+async function removeTag(t: MemberTag) {
+  if (!detail.value) return
+  try {
+    await ElMessageBox.confirm(`删除标签「${t.tag_key}」？删除将留痕审计。`, '确认删除', { type: 'warning' })
+  } catch { return }
+  if (isCs.value) await deleteManualTag(t.id)
+  else await deleteManualTagOps(t.id)
+  ElMessage.success('已删除')
+  await openDetail(detail.value.member as MemberItem)
 }
 
 onMounted(load)
@@ -147,4 +236,9 @@ onMounted(load)
 .pager { justify-content: flex-end; }
 .block { margin-bottom: 14px; }
 h4 { margin: 8px 0; color: #606266; }
+.tag-block { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; min-height: 24px; }
+.member-tag { margin-right: 0; }
+.tag-add { display: flex; gap: 8px; margin-bottom: 4px; }
+.tag-hint { color: #909399; font-size: 12px; margin-bottom: 14px; }
+.dim { color: #909399; font-size: 12px; }
 </style>

@@ -20,18 +20,31 @@
   </el-select>
   <el-input-number v-else-if="numeric" :model-value="Number(modelValue) || 0" size="small" style="width: 150px"
                    @update:model-value="emit('update:modelValue', $event)" />
+  <el-select v-else-if="field === 'tag'" filterable allow-create default-first-option
+             placeholder="选择或输入标签" style="width: 200px" size="small"
+             :model-value="String(modelValue ?? '')"
+             @update:model-value="emit('update:modelValue', $event)">
+    <el-option v-for="k in tagOptions" :key="k" :label="k" :value="k" />
+  </el-select>
   <el-input v-else :model-value="String(modelValue ?? '')" size="small" style="width: 200px"
             @update:model-value="emit('update:modelValue', $event)" />
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { FIELDS, type ConditionOp } from '../api/rules'
+import { PRESET_TAG_KEYS, tagKeys } from '../api/tags'
 
 const props = defineProps<{ modelValue: unknown; field: string; op: ConditionOp }>()
 const emit = defineEmits<{ 'update:modelValue': [value: unknown] }>()
 
 const numeric = computed(() => FIELDS[props.field]?.numeric)
+
+const knownKeys = ref<string[]>([])
+const tagOptions = computed(() => Array.from(new Set([...PRESET_TAG_KEYS, ...knownKeys.value])))
+onMounted(async () => {
+  try { knownKeys.value = await tagKeys() } catch { /* 词表拉取失败不阻断 */ }
+})
 
 const multiValue = ref<string[]>(Array.isArray(props.modelValue) ? props.modelValue.map(String) : [])
 watch(multiValue, (v) => {
