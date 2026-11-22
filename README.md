@@ -59,18 +59,18 @@ ZHLSZ_PASSWORD=<源系统密码>
 
 ```powershell
 cd backend
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
+
+# 一条命令创建 .venv 并按 uv.lock 精确安装依赖（需已安装 uv：pip install uv / 官网安装）
+uv sync
 
 # 初始化数据库（建全部表）
-alembic upgrade head
+uv run alembic upgrade head
 
 # 创建第一个超管账号（M0 提供 CLI）
-python -m app.cli create-admin --name admin
+uv run python -m app.cli create-admin --name admin
 
 # 启动服务（含 APScheduler 调度器）
-uvicorn app.main:app --reload --port 8000
+uv run uvicorn app.main:app --reload --port 8000
 ```
 
 后端就绪后可访问：
@@ -88,7 +88,7 @@ npm run dev
 
 浏览器打开 **http://localhost:5173**（Vite 开发服务器，`/api` 已代理到 `localhost:8000`）。
 
-> **重置环境**：删除 `backend/data/app.db` 后重跑 `alembic upgrade head` 即可。
+> **重置环境**：删除 `backend/data/app.db` 后重跑 `uv run alembic upgrade head` 即可。
 > **注意**：`--reload` 模式下改代码会连调度器一起重启；扫描任务幂等，不影响正确性。生产运行不要带 `--reload`。
 
 ---
@@ -122,13 +122,15 @@ docker compose logs -f backend
 
 ## 常用命令速查
 
-| 命令 | 说明 |
+| 命令（backend 目录） | 说明 |
 |---|---|
-| `alembic upgrade head` | 数据库迁移到最新 |
-| `alembic revision --autogenerate -m "xxx"` | 生成迁移脚本 |
-| `python -m app.cli create-admin --name admin` | 创建超管账号 |
-| `python -m app.cli sync --type all` | 手动触发同步（all/staff/member/order/share/binding） |
-| `pytest`（backend 目录） | 运行测试（幂等/越权/频控/分流稳定/状态机，39 用例） |
+| `uv sync` | 按 `uv.lock` 精确重建/更新 `.venv`（新增依赖用 `uv add xxx`） |
+| `uv run alembic upgrade head` | 数据库迁移到最新 |
+| `uv run alembic revision --autogenerate -m "xxx"` | 生成迁移脚本 |
+| `uv run python -m app.cli create-admin --name admin` | 创建超管账号 |
+| `uv run python -m app.cli sync --type all` | 手动触发同步（all/staff/member/order/share/binding） |
+| `uv run pytest` | 运行测试（幂等/越权/频控/分流稳定/状态机等） |
+| `uv run python scripts/verify_t1_t2_t3.py` | PRD T1/T2/T3 实测（分页上限/登录稳定性/手机号质量，需真实凭证） |
 
 ## 已实现的 API（M2 完成后）
 

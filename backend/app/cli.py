@@ -5,9 +5,8 @@
     python -m app.cli sync --type member     # M1 实现
     python -m app.cli scan --rule-id 1       # M2 实现
 
-用法（backend 目录）：
-    .\\.venv\\Scripts\\activate  或  uv run / 直接系统解释器
-    python -m app.cli ...
+用法（backend 目录，依赖由 uv 管理：uv sync 后）：
+    uv run python -m app.cli ...
 """
 import argparse
 import getpass

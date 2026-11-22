@@ -1,0 +1,30 @@
+[project]
+name = "greenos-backend"
+version = "0.3.9"
+description = "运营支持系统（Green-OS）后端：FastAPI + SQLAlchemy + APScheduler"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "alembic>=1.13",
+    "apscheduler>=3.10,<4",
+    "pyjwt>=2.8",
+    "bcrypt>=4.1",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.2",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "ddddocr>=1.4",
+    "httpx>=0.27",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+# 应用型项目（按 cwd 直接 python -m app.* 运行），不作为可安装包构建
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
