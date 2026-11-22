@@ -146,7 +146,7 @@ docker compose logs -f backend
 
 **Web 前端**（Vue3 + Element Plus，`frontend/`）：登录后按角色展示——客服：工作台/今日待办（三分区、复制留痕、完成回填）/会员中心/今日小结；运营：工作台/规则管理（两层嵌套可视化条件构建器、命中预览、手动扫描、扫描日志）/公共池认领与黑名单/效果分析（任务总览、实验效果对比、规则排行榜、客服绩效）；超管另有系统管理（同步日志与手动触发）。开发：`cd frontend && npm run dev`（5173，代理 /api → 8000）；构建：`npm run build`（含 `npx vue-tsc --noEmit` 类型检查）。
 
-调度：每日 02:30 自动同步 → 03:10 续订归因回补（F6-05 三信号）；每分钟 tick 检查规则 exec_time 到期扫描（同规则每日一次，幂等）+ 逾期 3 天自动过期（D4）+ 离职客服任务转公共池（BR-06）。客服归属三口径匹配（v0.3.6）：`MemberInfo.Staff` 负责员工姓名（主）→ `StaffInfo.MemberList` MemID（辅1）→ 手机号（辅2）；历史存量用 `backend/backfill_staff.py` 一次性回填（可重跑，幂等）。
+调度：每日 02:30 自动同步 → 03:10 续订归因回补（F6-05 三信号）→ 03:30 系统标签重算（F2-03：剩≤4次/静默30天/高价值Top20%/新会员≤7天，`POST /api/ops/tags/recompute` 可手动触发）；每分钟 tick 检查规则 exec_time 到期扫描（同规则每日一次，幂等）+ 逾期 3 天自动过期（D4）+ 离职客服任务转公共池（BR-06）。客服归属三口径匹配（v0.3.6）：`MemberInfo.Staff` 负责员工姓名（主）→ `StaffInfo.MemberList` MemID（辅1）→ 手机号（辅2）；历史存量用 `backend/backfill_staff.py` 一次性回填（可重跑，幂等）。标签体系（v0.3.10）：人工标签走会员 360（客服限本人名下/运营全量，预置词表+自定义+到期时间，删标留痕）；规则条件「会员标签 has」值取标签下拉；订单金额存量回填 `backend/backfill_order_price.py`（幂等）。
 
 **账号（v0.3.7 一人一号）**：超管 admin/admin123；运营 ops1/ops123；10 个客服由 StaffInfo 同步自动建号（登录名=姓名，如 `瓜娃子`），初始密码统一 `cs123`（`backend/bootstrap_accounts.py` 幂等发放）；改密/停用走超管「系统管理 → 人员管理」（停用立即失效并在下个 tick 转公共池）。验收脚本：`backend/accept_m0.py`、`backend/smoke_m1.py`、`backend/smoke_m2.py`、`backend/smoke_m3.py` 可重跑。
 

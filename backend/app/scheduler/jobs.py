@@ -43,6 +43,19 @@ def _daily_attribution() -> None:
         logger.exception("attribution backfill crashed")
 
 
+def _daily_tags() -> None:
+    """M4：每日 03:30 系统标签重算（F2-03：剩≤4次/静默/高价值/新会员，幂等）。"""
+    from ..core.db import SessionLocal
+    from ..tags.service import compute_system_tags
+
+    try:
+        with SessionLocal() as db:
+            stats = compute_system_tags(db)
+            logger.info("system tags recompute: %s", stats)
+    except Exception:
+        logger.exception("system tags recompute crashed")
+
+
 def _minute_tick() -> None:
     """M2：每分钟 tick —— 规则到期扫描（幂等：规则每日一次）+ 过期清理 + 离职转池。"""
     from ..core.db import SessionLocal
@@ -75,6 +88,10 @@ def start_scheduler() -> None:
         # 每日 03:10 续订归因回补（同步完成之后）
         scheduler.add_job(_daily_attribution, "cron", hour=3, minute=10,
                           id="daily_attribution", replace_existing=True, max_instances=1)
+    if not scheduler.get_job("daily_tags"):
+        # 每日 03:30 系统标签重算（归因之后，幂等）
+        scheduler.add_job(_daily_tags, "cron", hour=3, minute=30,
+                          id="daily_tags", replace_existing=True, max_instances=1)
     if not scheduler.get_job("minute_tick"):
         # 规则扫描由规则自身 exec_time 决定；tick 每分钟触发一次检查
         scheduler.add_job(_minute_tick, "interval", minutes=1, id="minute_tick",

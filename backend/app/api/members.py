@@ -16,8 +16,20 @@ from ..core.deps import require_cs, require_ops
 from ..models.member import Member
 from ..models.operator import CsMemberBinding, Operator
 from ..models.share import ShareDetail
+from ..tags.service import active_tags_of
 
 router = APIRouter(tags=["members"])
+
+
+def _tag_item(t) -> dict:
+    return {
+        "id": t.id,
+        "tag_type": t.tag_type,
+        "tag_key": t.tag_key,
+        "tag_value": t.tag_value,
+        "expire_at": t.expire_at,
+        "created_by": t.created_by,
+    }
 
 
 def _member_item(m: Member) -> dict:
@@ -135,7 +147,8 @@ def cs_member_detail(
     if member is None:
         # 不存在与无权一律 404，避免枚举探测（BR-10）
         raise HTTPException(status_code=404, detail="会员不存在或不在您的名下")
-    return {"member": _member_item(member), "shares": _shares_of(db, member_id)}
+    return {"member": _member_item(member), "shares": _shares_of(db, member_id),
+            "tags": [_tag_item(t) for t in active_tags_of(db, member_id)]}
 
 
 # ---------------------------------------------------------------- 运营端
@@ -192,6 +205,7 @@ def ops_member_detail(
         "member": _member_item(member),
         "cs_name": cs_name,
         "shares": _shares_of(db, member_id),
+        "tags": [_tag_item(t) for t in active_tags_of(db, member_id)],
     }
 
 

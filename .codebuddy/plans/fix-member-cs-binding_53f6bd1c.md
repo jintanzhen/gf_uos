@@ -33,62 +33,100 @@ todos:
       - backfill-staff
 ---
 
-## 需求概述
+## 用户需求
+继续 Green-OS 运营支持系统 M4 阶段开发，本期实现**标签体系**（PRD F2-03 + F2-04），分群（F2-05）明确不在本次范围。
 
-修复“会员的匹配客服都是空的”bug：源系统“会员信息”中的 **负责员工（MemberInfo.Staff）** 字段才是客服归属的权威口径，应据此重建会员-客服绑定关系。
+## 已确认口径
+- **静默标签**：距最近一次下单（ext_order 支付/创建时间）超过 **30 天**未下单即打标，每日自动重算
+- **人工标签**：预置词表（价格敏感/只收微信/勿扰/新客待跟进）下拉 + 允许自定义输入 + 支持到期时间（如“勿扰至5月”）+ 删标签留痕
 
-## 问题根因（实网已核实）
+## 核心功能
+1. **系统标签自动计算（F2-03）**：四类标签每日 03:30 自动重算 + 支持运营手动触发——
+   - `share_low`（剩≤4次）：名下生效份额剩余次数 ≤ 4
+   - `silent_30d`（静默）：30 天无任何下单记录
+   - `high_value`（高价值）：累计消费 Top 20% 会员
+   - `new_member`（新会员）：注册 ≤ 7 天
+2. **人工标签（F2-04）**：客服给自己名下会员打标（服务端校验归属），运营/超管可对全部会员打标；标签可设到期时间；删除留审计痕迹
+3. **规则条件引用标签**：规则引擎已支持 `标签 has` 条件（scanner/evaluator 就绪），本次补齐规则编辑器中标签值下拉选择（从已有标签词表读取），系统标签生成后即可被规则命中
+4. **会员 360 展示**：详情抽屉展示系统标签（灰）+ 人工标签（蓝，含到期时间），客服/运营可在此打标与删标
 
-- 现行 `sync_binding` 仅用 `StaffInfo.MemberList`（MemID 串）+ 手机号双口径匹配，当前生效绑定仅 9 条，导致前端“归属客服”全空。
-- 源系统 `MemberInfo.Staff` 存的是员工**姓名**（如 瓜娃子/覆盆子），此前未纳入同步。
-- 全量扫描 26,071 个会员：**4,218 个有非空负责员工，100% 命中 StaffInfo.StaffName 名单**（10 个客服），本地 operator 表 `Operator.name == StaffInfo.StaffName` 可直接对齐。
+## 验收标准
+- 系统标签实网重算幂等，manual 标签不受重算影响
+- 客服越权给他人会员打标 → 403；删除标签写审计日志
+- 规则条件选“拥有标签”后值控件为下拉选择，扫描命中带标签会员
+- 测试全绿（基线 51/51 + 新增用例）
 
-## 修复目标
 
-1. member 表落库“负责员工”姓名（`staff_name` 列），同步管线纳入该字段
-2. 绑定匹配改为三口径：**负责员工姓名（主）→ StaffInfo.MemberList（辅1）→ 手机号（辅2）**，并按优先级记录 source
-3. 一次性回填历史存量（增量游标拿不到未变更的老行），重跑绑定后约 4,218 个会员点亮归属客服
-4. 无 Staff 值的 21,853 个会员源系统本就无归属，继续走公共池（属正常，非 bug）
-5. 前端会员中心/详情无需改动（cs_name 来自 is_current binding join，自动点亮）
+## Tech Stack
+- 后端：FastAPI + SQLAlchemy + SQLite（复用现有架构，无新依赖）
+- 前端：Vue3 + TypeScript + Element Plus（复用现有页面）
+- 无需数据库迁移（Tag 模型已就绪：member_id/tag_type/tag_key/tag_value/expire_at/created_by）
 
-## 技术方案
+## Implementation Approach
+- **系统标签计算**（新建 `backend/app/tags/service.py`）：四类标签一次性重算——剩余次数与新会员用单查 SQL 集合判定；静默用 `ext_order` 按会员 max(pay_time, created_at) 聚合（注意 UTC↔本地偏移换算，复用 attribution.py 的 `_to_utc()` 先例）；高价值按 ext_order.total_price 汇总取前 20% 分位。落库策略：**只删 sys 类标签后批量重插**（绝对不动 manual），幂等且实现简单（26k 会员量级单次重算 <2s）
+- **标签 API**（新建 `backend/app/api/tags.py`）：人工标签新增/删除（写 audit_log）、标签 key 词表查询（sys 词表常量 + manual 去重 distinct）、运营手动触发系统标签重算；挂载到 main.py
+- **会员详情增强**：`api/members.py` 两个详情端点响应增加 `tags` 数组（过滤已过期），复用现有 require_cs/require_ops 权限注入
+- **调度**：`scheduler/jobs.py` 增加 daily_system_tags@03:30 cron（归因回补 03:10 之后，避免与同步竞争）
+- **前端**：`api/tags.ts` 新建；MembersView 360 抽屉加标签展示与打标 UI（el-select allow-create + 日期选择）；ConditionValue 的 tag 字段值控件从自由文本改为标签下拉（词表接口）
+- **性能**：重算为批量集合运算 + bulk insert，避开逐会员查询（防 N+1）；规则扫描 tag_map 已有缓存模式，零改动
 
-### 技术栈
+## Architecture Design
+```
+scheduler/jobs.py (daily 03:30) ──▶ tags/service.py::recompute_system_tags
+                                         │ 只重写 sys 类标签
+api/tags.py ◀── 前端 api/tags.ts          ▼
+  POST /ops/tags/recompute            tag 表 (sys|manual)
+  GET  /ops/tags/keys（词表）              ▲
+  POST /{member_id}/tags（打标）      scanner.py tag_map（已有，过滤过期）
+  DELETE /tags/{tag_id}（删标+审计）   evaluator.py has 操作（已有）
+  ▲
+api/members.py 详情响应 +tags 字段 ──▶ MembersView 360 抽屉展示/打标
+```
 
-沿用现有项目栈：FastAPI + SQLAlchemy 2.x + Alembic（迁移 0005）+ Vue3 前端零改动。
+## Directory Structure Summary
+```
+backend/
+├── app/
+│   ├── tags/
+│   │   ├── __init__.py            # [NEW] 空
+│   │   └── service.py             # [NEW] 四类系统标签计算与幂等重算（核心服务）
+│   ├── api/
+│   │   └── tags.py                # [NEW] 标签 API：打标/删标/词表/手动重算
+│   ├── api/members.py             # [MODIFY] 详情响应加 tags 数组
+│   ├── scheduler/jobs.py          # [MODIFY] 注册 daily_system_tags@03:30
+│   └── main.py                    # [MODIFY] 挂载 tags router
+├── tests/
+│   └── test_tags.py               # [NEW] 系统标签四口径+幂等+人工标签权限+删标留痕
+frontend/
+├── src/api/tags.ts                # [NEW] 标签 API 封装
+├── src/views/MembersView.vue      # [MODIFY] 360 抽屉标签展示+打标/删标 UI
+└── src/views/ConditionValue.vue   # [MODIFY] tag 值控件改为词表下拉
+```
 
-### 实现思路
+## Key Code Structures
+```python
+# backend/app/tags/service.py（核心签名）
+SYS_TAG_KEYS = ("share_low", "silent_30d", "high_value", "new_member")
+SILENT_DAYS = 30
+HIGH_VALUE_TOP_PCT = 0.20
 
-1. **模型与映射**（遵循 M3 迁移 0004 的既有模式）：
+def recompute_system_tags(db: Session, now: datetime | None = None) -> dict:
+    """重算四类系统标签（只动 tag_type='sys'，manual 不受影响）。幂等。
+    返回 {"share_low": n, "silent_30d": n, "high_value": n, "new_member": n}"""
 
-- `Member` 增加 `staff_name: Mapped[Optional[str]]`（String(50)，index）
-- `MEMBER_MAP` 增加 `"Staff": "staff_name"`
-- `sync_member` 赋值段补 `member.staff_name = data.get("staff_name")`（负责员工变更会 bump ModifyDate，增量游标可持续维护）
+# backend/app/api/tags.py（端点）
+# POST /api/ops/tags/recompute            运营手动触发重算
+# GET  /api/ops/tags/keys                 词表（SYS 常量 + manual distinct）
+# POST /api/{role}/members/{mid}/tags     打标（cs 校验归属，写 audit）
+# DELETE /api/{role}/tags/{tag_id}        删标（写 audit）
+	
 
-2. **绑定匹配重构**（`sync_binding`）：
-
-- 预载 `Operator.name → id` 映射（active 且 ext_cs_id 非空，与现有 operators 过滤一致）
-- 口径 a：`member.staff_name == Operator.name`（主，source="MemberInfo.Staff"）
-- 口径 b/c：保留现有 MemberList MemID 匹配与手机号匹配（source="StaffInfo"/"Mobile"），按 a→b→c 优先级取第一个命中
-- 统计字段新增 `matched_by_staff`；保留全量置零再重建的 R1 语义（`is_current=False` → 重新点亮）
-- 一个会员被多口径命中时以负责员工为准（R1 唯一归属，按口径优先级去重）
-
-3. **一次性回填脚本**（`backend/backfill_staff.py`，对齐 smoke 脚本风格）：
-
-- 全量分页拉 MemberInfo（rows=500，约 53 页），仅 UPDATE `staff_name` 有变化的行（UPSERT 幂等，不动游标）
-- 回填后自动调用 `sync_binding`，打印前后绑定数对比（预期 9 → ~4,218）
-- 写 sync_log（sync_type="binding"，detail 记录回填口径）
-
-4. **性能**：绑定匹配基于内存 dict（26k 会员 id/mobile/staff_name 预载），O(N)；回填 53 次 API 请求，分钟级，一次性成本可接受
-
-### 性能与可靠性
-
-- 匹配全程内存 dict 查找，无 N+1
-- BR-08：回填/绑定失败各自独立事务与 sync_log，不阻断
-- BR-01：绑定变化只影响后续扫描生成任务的 cs 归属/公共池落点，不重排已生成任务
-
-### 验证
-
-- 单测：补 `test_sync.py` 用例（staff 姓名匹配优先级、MemberList 回退、无 Staff 走 MemberList/手机号、口径去重唯一归属）
-- 实网：回填脚本 + 重跑绑定 → 核对 `total_current ≈ 4218`、各客服绑定数与源分布一致；前端会员中心抽查 cs_name 点亮
-- 回归：smoke_m2/smoke_m3 全量测试套件
+## Agent Extensions
+### SubAgent
+- **code-explorer**
+  - Purpose：执行期快速核对 attribution.py 的 `_to_utc()` 时区换算实现、main.py router 挂载模式与 audit_log 写入函数签名，避免实现时口径偏差
+  - Expected outcome：获得可直接复用的工具函数签名与挂载代码样例
+### Skill
+- **agent-browser**
+  - Purpose：实网浏览器验收——登录运营账号验证 360 抽屉标签展示/打标、规则编辑器标签下拉
+  - Expected outcome：页面真实渲染截图级验证，确认端到端可用

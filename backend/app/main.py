@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse, Response
 
 from .api.admin import router as admin_router
 from .api.auth import router as auth_router
@@ -13,6 +14,7 @@ from .api.members import router as members_router
 from .api.pool import router as pool_router
 from .api.reports import router as reports_router
 from .api.rules import router as rules_router
+from .api.tags import router as tags_router
 from .api.tasks import router as tasks_router
 from .core.config import settings
 from .core.db import ensure_sqlite_dir
@@ -58,3 +60,21 @@ app.include_router(rules_router, prefix="/api")
 app.include_router(tasks_router, prefix="/api")
 app.include_router(pool_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")
+app.include_router(tags_router, prefix="/api")
+
+# 浏览器直接访问后端根路径时跳转到 Swagger 文档
+@app.get("/", include_in_schema=False)
+async def root() -> RedirectResponse:
+    return RedirectResponse(url="/docs")
+
+# 内联 SVG favicon，避免浏览器自动请求产生 404 噪音
+_FAVICON_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
+    '<circle cx="16" cy="16" r="14" fill="#22c55e"/>'
+    '<text x="16" y="21" font-size="14" text-anchor="middle" '
+    'fill="#fff" font-family="sans-serif">G</text></svg>'
+)
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon() -> Response:
+    return Response(content=_FAVICON_SVG, media_type="image/svg+xml")
